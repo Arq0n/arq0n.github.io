@@ -24,20 +24,26 @@ body {
     padding: 0;
     color: white;
     margin: 0;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    margin: 20px 20px 20px 20px;
 }
 
 p{
     color: white;
 }
 
-.aboutbox{ 
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0px 20px 20px 20px;
-    gap: 20px;
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
 }
 
 .navbar{
@@ -48,6 +54,13 @@ p{
     justify-content: space-between;
     overflow: hidden;
     font-size: 25px;
+}
+
+.aboutbox{ 
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 20px 20px 20px;
+    gap: 20px;
 }
 
 .professional-photo{
@@ -74,6 +87,47 @@ p{
     justify-content: space-evenly;
     align-items: center;
 }
+
+.projectbox{
+    margin: 40px 40px 40px 40px;
+}
+
+.project{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    width: 700px;
+    height: 400px;
+    border-radius: .75rem;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    box-shadow: 0px 10px 30px -5px rgba(94, 94, 94, 0.8);
+}
+
+.card[for="c1"] {
+    background-image: url('./images/productividay_logo.png');
+}
+
+.description{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
+    font-size: 25px;
+}
+
+.description > 
+}
+
 
 
 
