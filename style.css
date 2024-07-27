@@ -39,11 +39,19 @@ p{
 
 .hidden{
     opacity: 0;
+    filter: blur(5px);
     transition: all 1s;
 }
 
 .show{
     opacity: 1;
+    filter: blur(0px);
+}
+
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
 }
 
 .navbar{
@@ -125,8 +133,6 @@ p{
     font-size: 25px;
 }
 
-.description > 
-}
 
 
 
