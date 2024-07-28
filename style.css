@@ -30,14 +30,16 @@ body {
 }
 
 h1{
-    margin: 20px 20px 20px 20px;
+    margin: 20px 20px 20px 0px;
 }
 
 p{
     color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.hidden{
+.hide{
     opacity: 0;
     filter: blur(5px);
     transition: all 1s;
@@ -64,10 +66,16 @@ p{
     font-size: 25px;
 }
 
+.namebox{
+    display: flex;
+    align-items: center;
+}
+
 .aboutbox{ 
     display: flex;
     justify-content: space-evenly;
-    padding: 0px 20px 20px 20px;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
     gap: 20px;
 }
 
@@ -102,8 +110,17 @@ p{
 
 .project{
     display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
+    background-color: #928ea27d;
+    padding: 20px 20px 20px 20px;
+    width: 90%;
+    border-radius: 2rem;
 }
 
 .card {
@@ -133,12 +150,72 @@ p{
     font-size: 25px;
 }
 
+.form{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    height: 500px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form:focus{
+    border: blue;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
 
 
+input{
+    width: 600px;
+    height: 60px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-size: 25px;
+    border-radius: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+textarea{
+    resize: none;
+    width: 600px;
+    height: 200px;
+    border: none;
+    outline: none;
+    padding: 10px 10px 25px 25px;
+    font-size: 20px;
+    border-radius: 40px;
+}
+
+.form button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+    font-size: 15px;
+    border-radius: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
 
 
 .footer{
-    font-size: 50px;
+    font-size: 30px;
     padding: 10px 20px 40px 20px;
     margin-top: 80px;
 }

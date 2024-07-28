@@ -6,20 +6,24 @@
     <title>Benjamin Sheeh</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script defer src="app.js"></script>
 </head>
 <body>
-    <div class="navbar hidden">
+    <div class="navbar hide">
         <div class="namebox">
             <p data-value="Benjamin Sheeh" id="name">Benjamin Sheeh</p>
         </div>
         <div class="aboutbox">
-            <a href="#about"> About </a>
+            <a href=".about"> About </a>
             <a href="#projects"> Projects </a>
             <a href="#contact"> Contact </a>
         </div>
     </div>
-    <div class="about-me hidden" id="about">
+    <div class="introduction hidden">
+        
+    </div>
+    <div class="about-me hide" id="about">
         <div class="professional-photo">
         </div>
         <div class="about-me-text">
@@ -33,33 +37,53 @@
             </p>
         </div>
     </div> 
-    <div class="projectbox hidden" id="projects">
+    <div class="projectbox hide" id="projects">
         <h1> Projects </h1>
         <div class="project">
-            <div class="project-wrapper">
-                <div class="container">
-                    <label for="c1" class="card">
-                    </label>
+            <div class="wrapper">
+                <div class="project-wrapper">
+                    <div class="container">
+                        <label for="c1" class="card">
+                        </label>
+                    </div>
                 </div>
-            </div>
-            <div class="description">
-                <p>
-                    Productivi-Day is a web application designed to help the user
-                    eliminate any potential bad habits they may have in their 
-                    schedule. The application processes the schedule using machine
-                    learning and APIs to generate an improved schedule as well
-                    as a summary of what has changed. Utilized React and Tailwind
-                    CSS to create the frontend and Node.js for the backend. 
-                </p>
+                <div class="description">
+                    <p>
+                        Productivi-Day is a web application designed to help the user
+                        eliminate any potential bad habits they may have in their 
+                        schedule. The application processes the schedule using machine
+                        learning and APIs to generate an improved schedule as well
+                        as a summary of what has changed. Utilized React and Tailwind
+                        CSS to create the frontend and Node.js for the backend. 
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="contact hidden" id="contact">
+    <div class="contact hide" id="contact">
         <h1> Contact Me </h1>
-        <form></form>
+        <div class="form">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="486f3c00-1f3a-426b-bd9f-8e0a704247dc">
+            
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Message" required></textarea>
+            
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            
+                <input type="hidden" name="redirect" value="thanks.html">
+            
+                <button type="submit">Submit Form</button>
+            </form>
+        </div>
     </div>
-    <div class="footer hidden">
+    <div class="footer hide">
         Created by Benjamin Sheeh
+        <div class="buttons">
+            <a href="https://www.linkedin.com/in/bsheeh/" class="fa fa-linkedin"></a>
+            <a href="https://github.com/Arq0n" class="fa fa-github"></a>
+        </div>
     </div>
 
     
