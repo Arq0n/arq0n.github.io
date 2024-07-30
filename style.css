@@ -104,6 +104,11 @@ p{
     align-items: center;
 }
 
+.skill-list{
+    display: flex;
+    justify-content: center;
+}
+
 .projectbox{
     margin: 40px 40px 40px 40px;
 }
