@@ -3,6 +3,9 @@ let intro = document.querySelector('.introduction')
 intro.addEventListener('click', () => {
   intro.setAttribute("style", "height: 0vh")
   intro.style.opacity = 0;
+  document.querySelectorAll("*:not(.introduction)").forEach((element) => {
+    element.classList.remove("not-active");
+  })
 })
 
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";

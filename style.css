@@ -242,4 +242,8 @@ textarea{
     top: 50%;
     translate: -50% -50%;
     z-index: 3;
-  }
+}
+
+.not-active{
+    display: none;
+}
