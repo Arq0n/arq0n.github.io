@@ -1,3 +1,10 @@
+let intro = document.querySelector('.introduction')
+
+intro.addEventListener('click', () => {
+  intro.setAttribute("style", "height: 0vh")
+  intro.style.opacity = 0;
+})
+
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 let interval = null;
@@ -40,14 +47,3 @@ const obs = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hide');
 hiddenElements.forEach((element) => obs.observe(element));
-
-const blob = document.getElementById("blob");
-
-window.onpointermove = event => { 
-  const { clientX, clientY } = event;
-  
-  blob.animate({
-    left: `${clientX}px`,
-    top: `${clientY}px`
-  }, { duration: 3000, fill: "forwards" });
-}
