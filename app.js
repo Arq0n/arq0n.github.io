@@ -8,7 +8,7 @@ intro.addEventListener('click', () => {
   })
 })
 
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
 let interval = null;
 
@@ -25,7 +25,7 @@ document.querySelector("#name").onmouseover = event => {
           return event.target.dataset.value[index];
         }
       
-        return letters[Math.floor(Math.random() * 26)]
+        return letters[Math.floor(Math.random() * 52)]
       })
       .join("");
     
