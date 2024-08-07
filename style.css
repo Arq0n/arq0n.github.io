@@ -232,6 +232,7 @@ textarea:focus,
     left: 50%;
     top: 50%;
     translate: -50% -50%;
+    z-index: 2;
 }
 
 .introduction h3 {
@@ -246,6 +247,7 @@ textarea:focus,
     left: 50%;
     top: 65%;
     translate: -50% -50%;
+    z-index: 2;
 }
 
 .not-active{
