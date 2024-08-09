@@ -9,7 +9,7 @@ a:hover{
 }
 
 body {
-    background-color: rgba(15, 15, 15, 0.985);
+    background-color: #05070d;
     padding: 0;
     color: white;
     margin: 0;
@@ -358,7 +358,8 @@ textarea:focus,
 }
   
 .stars {
-    background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+    background: black url(../images/stars.png) repeat;
+    background-size: 65%;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -379,10 +380,10 @@ textarea:focus,
     bottom: 0;
     z-index: 1;
         
-    -moz-animation:move-background 40s linear infinite;
-    -ms-animation:move-background 40s linear infinite;
-    -o-animation:move-background 40s linear infinite;
-    -webkit-animation:move-background 40s linear infinite;
-    animation:move-background 40s linear infinite;
+    -moz-animation:move-background 50s linear infinite;
+    -ms-animation:move-background 50s linear infinite;
+    -o-animation:move-background 50s linear infinite;
+    -webkit-animation:move-background 50s linear infinite;
+    animation:move-background 50s linear infinite;
     
 }

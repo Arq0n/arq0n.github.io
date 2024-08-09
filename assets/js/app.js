@@ -30,7 +30,7 @@ intro.addEventListener('click', () => {
           height: this.i.offsetHeight
       }, b = void 0 !== b ? b : {}, this.options = {
           particleColor: void 0 !== b.particleColor ? b.particleColor : "#fff",
-          background: void 0 !== b.background ? b.background : "#0f0f0f",
+          background: void 0 !== b.background ? b.background : "#05070d",
           interactive: void 0 !== b.interactive ? b.interactive : !0,
           velocity: this.setVelocity(b.speed),
           density: this.j(b.density)
