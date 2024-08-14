@@ -111,82 +111,37 @@ let particleCanvas = new ParticleNetwork(intro, options);
 
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
-let interval = null;
-
-document.querySelector("#name-page").onmouseover = event => {  
-  let iteration = 0;
-  
-  clearInterval(interval);
-  
-  interval = setInterval(() => {
-    event.target.innerText = event.target.innerText
-      .split("")
-      .map((letter, index) => {
-        if(index < iteration) {
-          return event.target.dataset.value[index];
-        }
-      
-        return letters[Math.floor(Math.random() * 52)]
-      })
-      .join("");
-    
-    if(iteration >= event.target.dataset.value.length){ 
-      clearInterval(interval);
-    }
-    
-    iteration += 1 / 3;
-  }, 30);
+let intervalList = {
+  'name-page': null,
+  'student-status': null,
+  'name': null
 };
 
-document.querySelector("#student-status").onmouseover = event => {  
-  let iteration = 0;
-  
-  clearInterval(interval);
-  
-  interval = setInterval(() => {
-    event.target.innerText = event.target.innerText
-      .split("")
-      .map((letter, index) => {
-        if(index < iteration) {
-          return event.target.dataset.value[index];
-        }
+document.querySelectorAll("#name-page, #student-status, #name").forEach((item) => {
+  item.onmouseover = event => {  
+    let iteration = 0;
+    let interval = intervalList[item.id];
+    clearInterval(interval);
+    
+    interval = setInterval(() => {
+      event.target.innerText = event.target.innerText
+        .split("")
+        .map((letter, index) => {
+          if(index < iteration) {
+            return event.target.dataset.value[index];
+          }
+        
+          return letters[Math.floor(Math.random() * 52)]
+        })
+        .join("");
       
-        return letters[Math.floor(Math.random() * 52)]
-      })
-      .join("");
-    
-    if(iteration >= event.target.dataset.value.length){ 
-      clearInterval(interval);
-    }
-    
-    iteration += 1 / 3;
-  }, 30);
-};
-
-document.querySelector("#name").onmouseover = event => {  
-  let iteration = 0;
-  
-  clearInterval(interval);
-  
-  interval = setInterval(() => {
-    event.target.innerText = event.target.innerText
-      .split("")
-      .map((letter, index) => {
-        if(index < iteration) {
-          return event.target.dataset.value[index];
-        }
+      if(iteration >= event.target.dataset.value.length){ 
+        clearInterval(interval);
+      }
       
-        return letters[Math.floor(Math.random() * 52)]
-      })
-      .join("");
-    
-    if(iteration >= event.target.dataset.value.length){ 
-      clearInterval(interval);
-    }
-    
-    iteration += 1 / 3;
-  }, 30);
-};
+      iteration += 1 / 3;
+    }, 30);
+}});
 
 const obs = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
