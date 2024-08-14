@@ -178,6 +178,20 @@ p{
     justify-content: center;
 }
 
+.skill-list th{
+    font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 2.2rem)
+}
+
+.skill-list td{
+    font-size: clamp(1rem, calc(0.75rem + 0.9vw), 2rem)
+}
+
+.skill-list th, 
+.skill-list td{
+    padding: 10px 20px 10px 20px;
+}
+
+
 .project{
     display: flex;
     justify-content: center;

@@ -121,6 +121,7 @@ document.querySelectorAll("#name-page, #student-status, #name").forEach((item) =
   item.onmouseover = event => {  
     let iteration = 0;
     let interval = intervalList[item.id];
+    
     clearInterval(interval);
     
     interval = setInterval(() => {
