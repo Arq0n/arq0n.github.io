@@ -1,75 +1,7 @@
-a{ 
-    color: white;
-    text-decoration: none;
-    font-size: clamp(1rem, calc(0.8rem + 1vw), 2rem)
-}
-
-a:hover{ 
-    color: rgba(54, 210, 215, 0.672); 
-}
-
-body {
-    background-color: #05070d;
-    padding: 0;
-    color: white;
-    margin: 0;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    -webkit-text-size-adjust: auto;
-}
-
-h1{
-    margin: 20px 0px 20px 0px;
-    font-size: clamp(2.5rem, calc(2.2rem + 1.5vw), 4rem);
-}
-
-h2{
-    font-size: clamp(2rem, calc(1.7rem + 1.5vw), 3.5rem)
-}
-
-h4{
-    margin: 10px 0px 10px 0px;
-    font-size: clamp(1.5rem, calc(1.3rem + 1vw), 2.5rem)
-}
-
-p{
-    color: white;
-    margin: 10px 0px 10px 0px;
-    font-size: clamp(1rem, calc(0.8rem + 1vw), 2rem)
-}
-
-.hide{
-    opacity: 0;
-    filter: blur(5px);
-    transition: all 1s;
-}
-
-.show{
-    opacity: 1;
-    filter: blur(0px);
-}
-
 @media(prefers-reduced-motion){
     .hidden{
         transition: none;
     }
-}
-.about-me{
-    padding: 20px 40px 20px 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10%;
-    align-items: center;
-}
-
-
-.container {
-    max-width: 1536px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
 }
 
 /* 2xl */
@@ -126,6 +58,73 @@ p{
     textarea{
         width: 100%;
     }
+}
+
+a{ 
+    color: white;
+    text-decoration: none;
+    font-size: clamp(1rem, calc(0.8rem + 1vw), 2rem)
+}
+
+a:hover{ 
+    color: rgba(54, 210, 215, 0.672); 
+}
+
+body {
+    background-color: #05070d;
+    padding: 0;
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    margin: 20px 0px 20px 0px;
+    font-size: clamp(2.5rem, calc(2.2rem + 1.5vw), 4rem);
+}
+
+h2{
+    font-size: clamp(2rem, calc(1.7rem + 1.5vw), 3.5rem)
+}
+
+h4{
+    margin: 10px 0px 10px 0px;
+    font-size: clamp(1.5rem, calc(1.3rem + 1vw), 2.5rem)
+}
+
+p{
+    color: white;
+    margin: 10px 0px 10px 0px;
+    font-size: clamp(1rem, calc(0.8rem + 1vw), 2rem)
+}
+
+.hide{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0px);
+}
+
+.about-me{
+    padding: 20px 40px 20px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+}
+
+.container {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .navbar{
@@ -399,5 +398,4 @@ textarea:focus,
     -o-animation:move-background 50s linear infinite;
     -webkit-animation:move-background 50s linear infinite;
     animation:move-background 50s linear infinite;
-    
 }
