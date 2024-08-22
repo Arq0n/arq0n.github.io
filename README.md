@@ -1,1 +1,1 @@
-# [personal-portfolio](https://arq0n.github.io/personal-portfolio/)
+# [personal-portfolio](https://arq0n.github.io/)
