@@ -60,6 +60,12 @@
     }
 }
 
+html,body
+{
+   min-width: 475px;
+   width: 100%;
+}
+
 a{ 
     color: white;
     text-decoration: none;
@@ -112,7 +118,7 @@ p{
 }
 
 .about-me{
-    padding: 20px 40px 20px 40px;
+    padding: 20px 2rem 20px 2rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -120,22 +126,13 @@ p{
     align-items: center;
 }
 
-.container {
-    max-width: 1536px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-}
-
 .navbar{
     display: flex;  
     color: black;
-    padding: 25px 40px 40px 40px;
+    padding: 25px 20px 40px 20px;
     text-align: center;
     justify-content: space-between;
     overflow: hidden;
-    font-size: 25px;
 }
 
 .namebox{
@@ -155,6 +152,7 @@ p{
     display: flex;
     height: 80%;
     border: 20px 20px 20px 20px;
+    margin: 20px;
 }
 
 .photo {
@@ -171,6 +169,7 @@ p{
     text-align: left;
     width: 100%;
     max-width: 800px;
+    margin: 20px
 }
 
 .skills{
@@ -193,6 +192,11 @@ p{
 .skill-list th, 
 .skill-list td{
     padding: 10px 3vw 10px 3vw;
+}
+
+.projectbox{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .project{
@@ -231,6 +235,11 @@ p{
     width: 100%;
     max-width: 600px;
     font-size: 25px;
+}
+
+.contact{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .form{
@@ -402,4 +411,12 @@ textarea:focus,
     -o-animation:move-background 50s linear infinite;
     -webkit-animation:move-background 50s linear infinite;
     animation:move-background 50s linear infinite;
+}
+
+.container {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
