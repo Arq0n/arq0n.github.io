@@ -34,7 +34,7 @@
     }
     input,
     textarea{
-        width: 100%;
+        max-width: 620px;
     }
 }
 
@@ -45,7 +45,7 @@
     }
     input,
     textarea{
-        max-width: 400px;
+        max-width: 425px;
     }
 }
 
@@ -144,7 +144,7 @@ p{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 0px 20px 0px;
     gap: 20px;
 }
 
